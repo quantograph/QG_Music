@@ -36,10 +36,10 @@ int Bass::Make() {
     track->_trackNumber = 3;
     track->_name = "Bass";
     track->_channel = 3;
-    track->_instrument = _settings->_composer._bass._instrument;
+    track->_instrument = _settings->_bass._instrument;
     track->_instrumentName = _instrumentNames[track->_instrument];
-    track->_pan = _settings->_composer._bass._pan;
-    track->_volume = _settings->_composer._bass._volume;
+    track->_pan = _settings->_bass._pan;
+    track->_volume = _settings->_bass._volume;
 
     // Notes
     MakePattern(3, patternNotes);
@@ -76,7 +76,7 @@ int Bass::MakePattern(int count, NoteList& notes) {
     note._start = 0;
     while(note._start < _band->_measureTime) {
         // Note or pause
-        if(random(1, 100) <= _settings->_composer._bass._density ||
+        if(random(1, 100) <= _settings->_bass._density ||
            i == 0) // First note of the measure
             pause = false;
         else
@@ -92,7 +92,7 @@ int Bass::MakePattern(int count, NoteList& notes) {
         }
 
         // Duration
-        note.setRandDuration(_settings->_composer._bass._lengthFrom, _settings->_composer._bass._lengthTo,
+        note.setRandDuration(_settings->_bass._lengthFrom, _settings->_bass._lengthTo,
                              _band->_outSong._beatTime, _band->_measureTime);
 
         if(!pause)

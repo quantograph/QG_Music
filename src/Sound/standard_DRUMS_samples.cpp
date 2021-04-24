@@ -1,3 +1,4 @@
+#include <QG_Devices.h>
 
 #include "standard_DRUMS_samples.h"
 

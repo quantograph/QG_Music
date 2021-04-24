@@ -38,7 +38,7 @@ int Drums::Make() {
     track->_instrumentName = "Drums";
     track->_instrument = PERCUSSION;
     track->_channel = 9;
-    track->_volume = _settings->_composer._drums._volume;
+    track->_volume = _settings->_drums._volume;
 
     // Notes
     MakeMeasure(measureNotes);
@@ -101,9 +101,9 @@ int Drums::MakeMeasure(NoteList& notes) {
         i++;
     }
 
-    MakeOne(notes, _settings->_composer._drums, DRUM_BASS1, 0.35);
-    MakeOne(notes, _settings->_composer._drums, DRUM_SNARE, -0.35);
-    //MakeOneDrum(notes, _settings->_composer._drums, DRUM_TOM_6, 0.3);
+    MakeOne(notes, _settings->_drums, DRUM_BASS1, 0.35);
+    MakeOne(notes, _settings->_drums, DRUM_SNARE, -0.35);
+    //MakeOneDrum(notes, _settings->_drums, DRUM_TOM_6, 0.3);
 
     std::sort(notes.begin(), notes.end(), sortNoteTime); // Sort notes by start time
 
@@ -151,7 +151,7 @@ void Drums::Test() {
     track->_instrumentName = "Drums";
     track->_instrument = PERCUSSION;
     track->_channel = 9;
-    track->_volume = _settings->_composer._drums._volume;
+    track->_volume = _settings->_drums._volume;
 
     // All drums
     note._start = 0.0;

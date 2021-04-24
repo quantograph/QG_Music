@@ -1,3 +1,4 @@
+#include <QG_Devices.h>
 
 #include "distortiongt_samples.h"
 

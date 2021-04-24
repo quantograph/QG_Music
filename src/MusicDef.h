@@ -1,10 +1,5 @@
 #pragma once
 
-#include <limits>
-#include <vector>
-#include <list>
-#include <float.h>
-
 #include <QG_Devices.h>
 
 class Synth;

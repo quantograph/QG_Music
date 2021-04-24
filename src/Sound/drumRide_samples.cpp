@@ -1,4 +1,5 @@
-
+#include <QG_Devices.h>
+#include "../MusicDef.h"
 #include "drumRide_samples.h"
 
 const AudioSynthWavetable::sample_data drumRide_samples[1] = {

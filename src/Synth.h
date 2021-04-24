@@ -32,7 +32,7 @@ public:
     bool updateEffects();
 
 private:
-    AudioBoard* audioBoard{};
+    AudioBoard* _audioBoard{};
     std::vector<SynthVoice*> _synthVoices; // Synth voices
     std::list<AudioMixer4*> _voiceMixers; // 4-channel mixers for all synth voices
     AudioConnection* _cords[MAX_MIXERS]; // Connections from voice mixers to the synth output mixer

@@ -1,3 +1,4 @@
+#include <QG_Devices.h>
 
 #include "gtfretnoise_samples.h"
 

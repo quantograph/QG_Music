@@ -1,18 +1,5 @@
 #include "MusicDef.h"
-/*#include "../Sound/drumHat_samples.h"
-#include "../Sound/drumBass_samples.h"
-#include "../Sound/drumSnare_samples.h"
-#include "../Sound/drumTomLow_samples.h"
-#include "../Sound/drumTomHigh_samples.h"
-#include "../Sound/drumCrash_samples.h"
-#include "../Sound/drumRide_samples.h"
-#include "../Sound/drumBlock_samples.h"
-#include "../Sound/steelstrgtr_samples.h"
-#include "../Sound/nylonstrgtr_samples.h"
-#include "../Sound/steelstrgtr_samples.h"
-#include "../Sound/overdrivegt_samples.h"
-#include "../Sound/piano_samples.h"
-#include "../Sound/bassoon_samples.h"*/
+#include "./Sound/QG_Sound.h"
 #include "Misc.h"
 #include "Note.h"
 #include "Track.h"
@@ -154,7 +141,7 @@ bool Player::play(Song* song) {
 
         Serial.printf("Making synth for instrument %d\n", instrument);
         Synth* synth = new Synth();
-        if(synth->init(instrument, _settings)) {
+        if(synth->init(instrument, _audioBoard)) {
             _instruments[instrument] = synth;
         }
     }

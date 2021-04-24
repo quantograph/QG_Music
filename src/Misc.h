@@ -1,7 +1,5 @@
 #pragma once
 
-#include <vector>
-
 extern const char* _instrumentNames[];
 extern const char* _drumNames[];
 

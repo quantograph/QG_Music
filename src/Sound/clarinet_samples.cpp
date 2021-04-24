@@ -1,3 +1,4 @@
+#include <QG_Devices.h>
 #include "clarinet_samples.h"
 
 const AudioSynthWavetable::sample_data clarinet_samples[2] = {

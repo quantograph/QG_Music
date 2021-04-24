@@ -1,3 +1,4 @@
+#include <QG_Devices.h>
 #include "bassoon_samples.h"
 
 const AudioSynthWavetable::sample_data bassoon_samples[2] = {

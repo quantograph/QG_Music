@@ -14,7 +14,7 @@ private:
     bool setupDrums();
     void testDrums();
     Synth* _instruments[MAX_INSTRUMENT]; // Synthesizers for all instruments (Tracks)
-    AudioBoard* audioBoard{};
+    AudioBoard* _audioBoard{};
 
 public:
     Player();

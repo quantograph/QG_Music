@@ -3,6 +3,7 @@
 
 #include "MusicDef.h"
 #include <algorithm>
+#include "Misc.h"
 #include "MusicDef.h"
 #include "Note.h"
 #include "Chord.h"
