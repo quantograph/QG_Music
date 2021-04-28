@@ -8,8 +8,8 @@ AudioBoard _audio = AudioBoard();
 // the setup function runs once when you press reset or power the board
 void setup() {
     _screen.init();
-    _screen._screen.setTextColor(ILI9341_WHITE);
-    _screen._screen.setTextSize(2);
+    _screen._screen->setTextColor(ILI9341_WHITE);
+    _screen._screen->setTextSize(2);
 
     _audio.init(&_settings);
     _audio.setInput(Inputs::mic);
